@@ -143,11 +143,34 @@ color would be yellow
 
 */ 
 
+* {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color:purple;  
+}
+
+a{
+  font-weight:550;
+  color:cadetblue;
+}
+
 div {
     color: white;
     background-color: black;
   }
   
-p {
-    color: red;
-  }
+img {
+    width:auto;
+    min-width:450px;
+    height:450px;
+}
+li, p {
+  color:black;
+}
+h1 {
+  font-weight:950;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align:center;
+}
+
+/*Can also use inline style
+<div style="color:white; background-color:black;></div>*/
