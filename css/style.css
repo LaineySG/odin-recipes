@@ -1,0 +1,145 @@
+/* This is a comment.  */
+
+/*
+
+* {
+    color:purple;
+}
+
+this would change all text to the color purple. 
+asterisk is the universal selector.
+
+There are also type selectors like div or p. 
+
+And there are class selectors which select classes.
+
+HTML
+<div class="alert-text severe-alert">
+CSS
+.alert-text {
+    color:red;
+}
+.severe-alert {
+    font-size:16;
+}
+
+ID selectors are similar to class selectors
+
+HTML
+<div id="title">
+CSS
+#title {
+    background-color:red;
+}
+
+An element can only have one ID but can have multiple classes.
+IDs  can't be repeated on a given page.
+
+.read {
+  color: white;
+  background-color: black;
+   several unique declarations 
+}
+
+.unread {
+  color: white;
+  background-color: black;
+   several unique declarations 
+}
+
+can be easier written as 
+
+.read,
+.unread {
+  color: white;
+  background-color: black;
+}
+
+.read {
+   several unique declarations 
+}
+
+.unread {
+   several unique declarations 
+}
+
+.subsection.header  will select any with both classes.
+.subsection#preview will select any with both the subsection class
+and the preview ID
+
+Descendant combinators {
+.ancestor .child {
+will select any element with the class "child" and the parent "ancestor"
+no matter how deep
+
+HTML 
+<div class="ancestor">
+<div class="child>
+<div class="child></div></div></div>
+
+all 3 would be selected w/ .ancestor .child
+
+important properties include
+color
+red, transparent, hex, RGB, HSL values
+
+background-color
+font-family ie "Times New Roman", sans-serif. Generic don't use quotes
+Include multiple as if it cant find itll go through the list
+font-family: "Times New Roman", sans-serif;
+
+font-size: 22px;
+font-weight: 700; this changes how bold it is between 1 and 1000
+700 is regular bold
+
+text-align: center; aligns horizontally within an element
+
+img {
+    height:auto;
+    width: 500px;
+} this will keep the proportions while setting width.
+explicitly state height and width so it doesnt load weird on the website, it will reserve
+the space for the image instead of changing while loading.
+
+CSS determines order using specificity; more specific
+takes priority over less specific.
+ID > class > type > *
+
+more selectors of same type give more specificity
+
+inheritance - color, font-size, font-family etc usually inherit
+HTML
+<div id="parent">
+  <div class="child"></div>
+</div>
+
+CSS
+#parent {
+  color: red;
+}
+
+.child {
+  color: blue;
+}
+
+The child element would have blue as direct targetting takes 
+priority over inheritance
+
+final tie breaker is whatever is defined last is the answer.
+
+CSS
+.alert {
+  color: red;
+}
+
+.warning {
+  color: yellow;
+}
+
+color would be yellow
+
+
+
+
+*/ 
+
